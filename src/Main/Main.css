@@ -1,0 +1,50 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #FDF0E9;
+    width: 100%;
+}
+
+.navigation {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 560px;
+    margin-top: 80px;
+    margin-bottom: 75px;
+}
+
+.navigation__category:hover {
+    cursor: pointer;
+}
+
+.cards-grid {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    max-width: 1800px;
+}
+
+.dropdown {
+    display: none;
+}
+
+@media (max-width: 1039px) {
+    .onlyForDesktop {
+        display: none;
+    }
+
+    .cards-grid {
+        margin-top: 48px;
+        flex-wrap: wrap;
+        flex-direction: column;
+    }
+
+    .dropdown {
+        display: block;
+        margin-top: 30px;
+    }
+}
